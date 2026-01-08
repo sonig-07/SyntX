@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SyntX Compiler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>⚡ SyntX</h1>
+    <p class="subtitle">Multi-Language Code Compiler</p>
+
+    <div class="controls">
+        <select id="language">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="js">JavaScript</option>
+        </select>
+
+        <button onclick="setSample()">Load Sample</button>
+        <button class="run" onclick="runCode()">Run ▶</button>
+    </div>
+
+    <div class="editor-wrapper">
+    <pre id="lineNumbers"></pre>
+    <textarea id="code"></textarea>
+</div>
+
+
+    <div class="output-box">
+        <div class="output-title">Output</div>
+        <pre id="output">// program output</pre>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
